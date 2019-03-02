@@ -30,7 +30,7 @@ Now read this: http://source.android.com/source/initializing.html
 
 NOTE: When I say "read", I mean read and comprehend.
 
-In addition to Android's build prerequisites LineageOS 14.1 requires "maven"
+In addition to Android's build prerequisites LineageOS 15.1 requires "maven"
 ```bash
 sudo apt-get install maven2
 ```
