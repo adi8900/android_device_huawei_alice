@@ -252,11 +252,17 @@ PRODUCT_PACKAGES += \
     libxml2
 
 PRODUCT_PACKAGES += \
-    vndk-sp
+    qti-telephony-common
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 PRODUCT_PACKAGES += \
-    Jelly \
-    Calendar
+    vndk-sp
+
+#PRODUCT_PACKAGES += \
+#    Jelly \
+#    Calendar
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
