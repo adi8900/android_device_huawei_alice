@@ -15,16 +15,17 @@
 $(call inherit-product, $(LOCAL_PATH)/pre-base.mk)
 $(call inherit-product, $(LOCAL_PATH)/full_alice.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-PRODUCT_NAME := lineage_alice
+PRODUCT_NAME := aosp_alice
 
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=hi6210sft
+
+PRODUCT_PACKAGES += \
+    Launcher3 \
+    messaging
